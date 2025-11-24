@@ -1,0 +1,30 @@
+# AI Procrastination Detector Configuration
+# Copy this file to config.yaml and customize as needed
+
+# Detection Settings
+detection:
+  threshold: 30  # Number of consecutive frames to trigger alert
+  confidence: 0.5  # Minimum confidence for detection (0.0 - 1.0)
+  yolo_model_path: "yolo11n.pt"
+  cell_phone_class_id: 67
+
+# Alert System Settings
+alert:
+  images_folder: "horse of wisdom"  # Relative to project directory
+  audio_file: "alert_sound.mp3"
+  window_max_width: 500
+  switch_interval: 2000  # Milliseconds between carousel images
+  transition_duration: 800  # Milliseconds for transition animation
+
+# UI Settings
+ui:
+  button_width: 160
+  button_height: 40
+  button_continue_text: "I'm working!"
+  button_quit_text: "Quit App"
+  display_window_name: "Procrastination Detector"
+  display_fps: 60
+  quit_key: "q"
+
+# Logging
+log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
