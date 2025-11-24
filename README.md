@@ -10,7 +10,7 @@ An intelligent desktop application that detects cell phone usage via your laptop
 
 ## ✨ Features
 
-- 🐴 just a horse making sure u have shit done xD
+- 🐴 just a horse making sure u get shit done xD
 
 ## 📋 System Requirements
 
