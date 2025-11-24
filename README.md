@@ -10,13 +10,7 @@ An intelligent desktop application that detects cell phone usage via your laptop
 
 ## ✨ Features
 
-- 🎯 **Real-time Phone Detection**: Uses YOLOv8 to detect cell phones in your webcam feed
-- 🚨 **Smart Alerts**: Triggers after 30 consecutive frames of phone detection to avoid false positives
-- 🎠 **Animated Carousel**: Displays rotating horse-of-wisdom memes with smooth cube transitions
-- ⚙️ **Highly Configurable**: Easy YAML-based configuration for all settings
-- 🛡️ **Production-Ready**: Comprehensive error handling, logging, and validation
-- 🎨 **Customizable UI**: Configure button text, colors, and transition effects
-- 🔊 **Audio Alerts**: Optional sound alerts with fallback to system beep
+- 🐴 just a horse making sure u have shit done xD
 
 ## 📋 System Requirements
 
