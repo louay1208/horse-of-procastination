@@ -1,0 +1,51 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+build
+develop-eggs
+dist
+downloads
+eggs
+.eggs
+lib
+lib64
+parts
+sdist
+var
+wheels
+*.egg-info
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment (Critical for build speed)
+.venv
+venv
+ENV
+env
+
+# IDEs
+.vscode
+.idea
+
+# Large Files (User downloads these)
+yolo11n.pt
+*.pt
+*.pth
+
+# User Data
+config.yaml
+alert_sound.mp3
+horse of wisdom
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore

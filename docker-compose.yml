@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  procrastination-detector:
+    build: .
+    image: procrastination-detector
+    container_name: horse-of-wisdom
+
+    # Enable GUI access
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+
+    # Mount volumes for configuration and assets
+    volumes:
+      - ./config.yaml:/app/config.yaml
+      - ./horse of wisdom:/app/horse of wisdom
+      - ./alert_sound.mp3:/app/alert_sound.mp3
+      - /tmp/.X11-unix:/tmp/.X11-unix
+
+    # Enable webcam access
+    devices:
+      - /dev/video0:/dev/video0
+
+    # Optional: Enable GPU support (requires nvidia-docker)
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+    # Keep container running
+    stdin_open: true
+    tty: true

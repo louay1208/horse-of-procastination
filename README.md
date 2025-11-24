@@ -216,6 +216,32 @@ uv run app.py
 - CUDA support requires NVIDIA GPU with compatible drivers
 - Currently detects only cell phones (YOLO class 67)
 
+## 🐳 Docker Deployment
+
+You can run the application in a Docker container (Linux/WSL2 recommended).
+
+### Prerequisites
+
+- Docker and Docker Compose installed
+- **Linux**: X11 server running
+- **Windows**: WSL2 with WSLg (Windows 11) or VcXsrv configured
+
+### Running with Docker Compose
+
+1. **Build and Run**:
+   ```bash
+   docker-compose up --build
+   ```
+
+2. **Configuration**:
+   - The container mounts `config.yaml`, `horse of wisdom/`, and `alert_sound.mp3` from your host.
+   - Edit these files locally to affect the running container.
+
+### Troubleshooting Docker
+
+- **No Display**: Ensure you have allowed X11 connections (`xhost +local:docker` on Linux).
+- **No Webcam**: Verify `/dev/video0` exists and is accessible. On Windows, you may need to use USBIPD-WIN to pass the webcam to WSL2.
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
